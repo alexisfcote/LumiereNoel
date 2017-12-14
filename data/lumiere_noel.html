@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content='width=device-width, initial-scale=1' name='viewport' />
+    <meta name="description" content="Control for decoration">
+    <meta name="author" content="AFC">
+
+    <title>Contrôle des lumières de Noël</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+
+
+    <style type="text/css">
+        .btn-orange {
+            background-color: #ff8f44;
+            border-color: #ff8f44;
+            color: #000000;
+        }
+
+        .btn-orange:hover,
+        .btn-orange:focus,
+        .btn-orange:active,
+        .btn-orange.active {
+            background-color: #b1622e;
+            border-color: #b1622e;
+            color: #000000;
+        }
+
+        .btn-orange.disabled:hover,
+        .btn-orange.disabled:focus,
+        .btn-orange.disabled:active,
+        .btn-orange.disabled.active,
+        .btn-orange[disabled]:hover,
+        .btn-orange[disabled]:focus,
+        .btn-orange[disabled]:active,
+        .btn-orange[disabled].active,
+        fieldset[disabled] .btn-orange:hover,
+        fieldset[disabled] .btn-orange:focus,
+        fieldset[disabled] .btn-orange:active,
+        fieldset[disabled] .btn-orange.active {
+            background-color: #a57d64;
+            border-color: #a57d64;
+            color: #000000;
+        }
+        
+        .btn-mauve {
+            background-color: #5846fc;
+            border-color: #5846fc;
+            color: #ffffff;
+        }
+
+        .btn-mauve:hover,
+        .btn-mauve:focus,
+        .btn-mauve:active,
+        .btn-mauve.active {
+            background-color: #3d32b6;
+            border-color: #3d32b6;
+            color: #ffffff;
+        }
+
+        .btn-mauve.disabled:hover,
+        .btn-mauve.disabled:focus,
+        .btn-mauve.disabled:active,
+        .btn-mauve.disabled.active,
+        .btn-mauve[disabled]:hover,
+        .btn-mauve[disabled]:focus,
+        .btn-mauve[disabled]:active,
+        .btn-mauve[disabled].active,
+        fieldset[disabled] .btn-mauve:hover,
+        fieldset[disabled] .btn-mauve:focus,
+        fieldset[disabled] .btn-mauve:active,
+        fieldset[disabled] .btn-mauve.active {
+            background-color: #746fbd;
+            border-color: #746fbd;
+            color: #ffffff;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container theme-showcase" role="main" align="center">
+
+        <div class="jumbotron" style="padding: 2rem 2rem">
+            <h1 class="display-5">Contrôle des lumières de Noël</h1>
+        </div>
+
+        <p>
+            <a type="button" class="btn btn-outline-success" href="\on?state=1">On</a>
+            <a type="button" class="btn btn-outline-danger" href="\on?state=0">Off</a>
+        </p>
+        <p>
+            <a type="button" class="btn btn-outline-success" href="\pulse?state=1">PulseOn</a>
+            <a type="button" class="btn btn-outline-primary" href="\pulse?state=0">PulseOff</a>
+        </p>
+
+
+
+        <div class="row">
+            <div class="col">
+                <a type="button" class="btn btn-success" style="min-width: 100px" href="\color?color=vert">Vert</a>
+                <a type="button" class="btn btn-primary" style="min-width: 100px" href="\color?color=bleu">Bleu</a>
+                <a type="button" class="btn btn-warning" style="min-width: 100px" href="\color?color=jaune">Jaune</a>
+            </div>
+            <div class="w-100" style="margin: 2px"></div>
+            <div class="col">
+                <a type="button" class="btn btn-danger" style="min-width: 100px" href="\color?color=rouge">Rouge</a>
+                <a type="button" class="btn btn-info" style="min-width: 100px" href="\color?color=turquoise">Turquoise</a>
+                <a type="button" class="btn btn-orange" style="min-width: 100px" href="\color?color=orange">Orange</a>
+            </div>
+            <div class="w-100" style="margin: 2px"></div>
+            <div class="col">
+                <a type="button" class="btn btn-mauve" style="min-width: 100px" href="\color?color=mauve">Mauve</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
